@@ -42,6 +42,7 @@ C++ 之道，不在于多，而在于通。
 | **DynamicStaticLib** | C/C++ 程序从编译到运行的全生命周期 | C_MemorySegmentation | [链接](https://www.youtube.com/watch?v=Xm-feSXlLVk) | [链接](https://www.bilibili.com/video/BV1Bw1qB1EwU) |
 | **CppTypeAlias** | C++ 类型别名 | C_C++_ClockwiseSpiral, DynamicStaticLib | [链接](https://www.youtube.com/watch?v=ezqmozV3p0M) | [链接](https://www.bilibili.com/video/BV1VWqvB5ELX) |
 | **Cpp_SmartPtrs** | C++ 智能指针 | C_MemorySegmentation, MoveSemantic | [链接](https://www.youtube.com/watch?v=l1RRedJbk5k) | [链接](https://www.bilibili.com/video/BV1ajWyzXEpj) |
+| **CppCallable** | 函数的超进化 从面向过程的回调、仿函数至函数式编程与万能引用的可调用对象全解析 | MoveSemantic, CppTypeAlias, DynamicStaticLib | [链接](https://www.youtube.com/watch?v=K2QZncoUdLk) | [链接](https://www.bilibili.com/video/BV1F8zNB1EZk) |
 | **Cpp_namespace** | C++ 命名空间 | DynamicStaticLib | [链接](https://www.youtube.com/watch?v=n8uNKJSTyQc) | [链接](https://www.bilibili.com/video/BV1NTUpBoE59) |
 
 ---
@@ -53,7 +54,7 @@ C++ 之道，不在于多，而在于通。
 1. C_C++_ClockwiseSpiral / C_MemorySegmentation / MoveSemantic（可任意顺序）
 2. DynamicStaticLib
 3. CppTypeAlias / Cpp_SmartPtrs（可任意顺序）
-4. Cpp_namespace
+4. CppCallable / Cpp_namespace（可任意顺序）
 
 ## 🤝 贡献
 

@@ -44,6 +44,7 @@ By leveraging these minimalist physical scenarios and code examples, this projec
 | **DynamicStaticLib** | Complete lifecycle of C/C++ programs from compilation to runtime | C_MemorySegmentation | [Link](https://www.youtube.com/watch?v=Xm-feSXlLVk) | [Link](https://www.bilibili.com/video/BV1Bw1qB1EwU) |
 | **CppTypeAlias** | Introduction to type aliases in C++ | C_C++_ClockwiseSpiral, DynamicStaticLib | [Link](https://www.youtube.com/watch?v=ezqmozV3p0M) | [Link](https://www.bilibili.com/video/BV1VWqvB5ELX) |
 | **Cpp_SmartPtrs** | Introduction to C++ smart pointers | C_MemorySegmentation, MoveSemantic | [Link](https://www.youtube.com/watch?v=l1RRedJbk5k) | [Link](https://www.bilibili.com/video/BV1ajWyzXEpj) |
+| **CppCallable** | Evolution of callables: from C callbacks and functors to functional programming and universal references | MoveSemantic, CppTypeAlias, DynamicStaticLib | [Link](https://www.youtube.com/watch?v=K2QZncoUdLk) | [Link](https://www.bilibili.com/video/BV1F8zNB1EZk) |
 | **Cpp_namespace** | Introduction to C++ namespaces | DynamicStaticLib | [Link](https://www.youtube.com/watch?v=n8uNKJSTyQc) | [Link](https://www.bilibili.com/video/BV1NTUpBoE59) |
 
 ---
@@ -55,7 +56,7 @@ For optimal learning experience, follow this suggested order:
 1. C_C++_ClockwiseSpiral / C_MemorySegmentation / MoveSemantic (can learn in any order)
 2. DynamicStaticLib
 3. CppTypeAlias / Cpp_SmartPtrs (can learn in any order)
-4. Cpp_namespace
+4. CppCallable / Cpp_namespace (can learn in any order)
 
 ## 🤝 Contributing
 
