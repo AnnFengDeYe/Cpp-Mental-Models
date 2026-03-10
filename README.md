@@ -53,7 +53,7 @@ By leveraging these minimalist physical scenarios and code examples, this projec
 
 For optimal learning experience, follow this suggested order:
 
-1. C_C++_ClockwiseSpiral / C_MemorySegmentation / MoveSemantic (can learn in any order)
+1. C_ClockwiseSpiral / C_MemorySegmentation / MoveSemantic (can learn in any order)
 2. DynamicStaticLib
 3. CppTypeAlias / Cpp_SmartPtrs (can learn in any order)
 4. CppCallable / Cpp_namespace (can learn in any order)

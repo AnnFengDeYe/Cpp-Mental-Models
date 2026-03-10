@@ -51,7 +51,7 @@ C++ 之道，不在于多，而在于通。
 
 为了获得最佳学习体验，建议按以下顺序学习：
 
-1. C_C++_ClockwiseSpiral / C_MemorySegmentation / MoveSemantic（可任意顺序）
+1. C_ClockwiseSpiral / C_MemorySegmentation / MoveSemantic（可任意顺序）
 2. DynamicStaticLib
 3. CppTypeAlias / Cpp_SmartPtrs（可任意顺序）
 4. CppCallable / Cpp_namespace（可任意顺序）
