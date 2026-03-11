@@ -40,7 +40,8 @@ By leveraging these minimalist physical scenarios and code examples, this projec
 | **C_MemorySegmentation** | Introduction to C++ memory layout and memory segmentation | None | [Link](https://www.youtube.com/watch?v=rUAGJAhmpDg) | [Link](https://www.bilibili.com/video/BV1Sepyz7ECL) |
 | **MoveSemantic** | Introduction to lvalues, rvalues, and move semantics in C++ | None | [Link](https://www.youtube.com/watch?v=ywFJ-17n_sY) | [Link](https://www.bilibili.com/video/BV17ce7zLEzu) |
 | **DynamicStaticLib** | Complete lifecycle of C/C++ programs from compilation to runtime | C_MemorySegmentation | [Link](https://www.youtube.com/watch?v=Xm-feSXlLVk) | [Link](https://www.bilibili.com/video/BV1Bw1qB1EwU) |
-| **CppTypeAlias** | Introduction to type aliases in C++ | C_C++_ClockwiseSpiral, DynamicStaticLib | [Link](https://www.youtube.com/watch?v=ezqmozV3p0M) | [Link](https://www.bilibili.com/video/BV1VWqvB5ELX) |
+| **Cpp_OOP** | Class contracts and behaviors, inheritance and polymorphism, virtual function tables, and the Rule of Zero/Five | C_MemorySegmentation, MoveSemantic | [Link]() | [Link]() |
+| **CppTypeAlias** | Introduction to type aliases in C++ | C_ClockwiseSpiral, DynamicStaticLib | [Link](https://www.youtube.com/watch?v=ezqmozV3p0M) | [Link](https://www.bilibili.com/video/BV1VWqvB5ELX) |
 | **Cpp_SmartPtrs** | Introduction to C++ smart pointers | C_MemorySegmentation, MoveSemantic | [Link](https://www.youtube.com/watch?v=l1RRedJbk5k) | [Link](https://www.bilibili.com/video/BV1ajWyzXEpj) |
 | **CppCallable** | Evolution of callables: from C callbacks and functors to functional programming and universal references | MoveSemantic, CppTypeAlias, DynamicStaticLib | [Link](https://www.youtube.com/watch?v=K2QZncoUdLk) | [Link](https://www.bilibili.com/video/BV1F8zNB1EZk) |
 | **Cpp_namespace** | Introduction to C++ namespaces | DynamicStaticLib | [Link](https://www.youtube.com/watch?v=n8uNKJSTyQc) | [Link](https://www.bilibili.com/video/BV1NTUpBoE59) |
@@ -52,9 +53,54 @@ By leveraging these minimalist physical scenarios and code examples, this projec
 For optimal learning experience, follow this suggested order:
 
 1. C_ClockwiseSpiral / C_MemorySegmentation / MoveSemantic (can learn in any order)
-2. DynamicStaticLib
+2. DynamicStaticLib / Cpp_OOP (can learn in any order)
 3. CppTypeAlias / Cpp_SmartPtrs (can learn in any order)
 4. CppCallable / Cpp_namespace (can learn in any order)
+
+## 🏗️ Project Structure 
+
+This project uses a global CMake architecture, cleanly separating source code from build artifacts:
+
+```shell
+Cpp-Mental-Models/
+├── CMakeLists.txt       # Global CMake config (Centralized C++ standards & output paths)
+├── modules/             # Source code: Independent C++ topics aligned with video tutorials
+│   ├── Cpp_OOP/
+│   ├── MoveSemantic/
+│   └── ...
+├── bin/                 # 📦 Generated after build: Unified output for all executables (Git ignored)
+└── lib/                 # 📦 Generated after build: Unified output for all libraries (Git ignored)
+```
+
+## 🚀 Quick Start
+
+**Prerequisites:** CMake 3.15+ and a C++20 compatible compiler.
+
+### Option 1: IDE (Highly Recommended)
+
+We recommend using **CLion** or **VSCode** (with the CMake Tools extension).
+
+1. Open the project **root directory** (`Cpp-Mental-Models`) directly in your IDE.
+2. Allow the IDE to automatically parse the global `CMakeLists.txt`.
+3. Select your desired target from the run/build dropdown menu (e.g., `Cpp_OOP_demo1`) and click Run.
+
+> **💡 Pro Tip**: Always run the code via the generated CMake Targets! Avoid using "single-file run" shortcuts next to the `main()` function, as they will bypass standard CMake linkage and cause `Undefined symbols` errors.
+
+
+### Option 2: Command Line 
+
+```shell
+# 1. Generate build system (This will automatically create bin/ and lib/ dirs)
+cmake -B build
+
+# 2. Build all modules
+cmake --build build
+
+# 3. Run the specific executable
+./bin/Cpp_OOP_demo1_inheritance_polymorphism
+```
+
+
 
 ## ⭐ Star History
 

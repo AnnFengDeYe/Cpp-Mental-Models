@@ -38,7 +38,8 @@ C++ 之道，不在于多，而在于通。
 | **C_MemorySegmentation** | C++ 的内存布局或内存分段 | 无 | [链接](https://www.youtube.com/watch?v=rUAGJAhmpDg) | [链接](https://www.bilibili.com/video/BV1Sepyz7ECL) |
 | **MoveSemantic** | C++ 的左值、右值和移动语义 | 无 | [链接](https://www.youtube.com/watch?v=ywFJ-17n_sY) | [链接](https://www.bilibili.com/video/BV17ce7zLEzu) |
 | **DynamicStaticLib** | C/C++ 程序从编译到运行的全生命周期 | C_MemorySegmentation | [链接](https://www.youtube.com/watch?v=Xm-feSXlLVk) | [链接](https://www.bilibili.com/video/BV1Bw1qB1EwU) |
-| **CppTypeAlias** | C++ 类型别名 | C_C++_ClockwiseSpiral, DynamicStaticLib | [链接](https://www.youtube.com/watch?v=ezqmozV3p0M) | [链接](https://www.bilibili.com/video/BV1VWqvB5ELX) |
+| **Cpp_OOP** | 类的契约与行为、继承与多态、虚函数表机制，以及零之法则/五之法则 | C_MemorySegmentation, MoveSemantic | [链接]() | [链接]() |
+| **CppTypeAlias** | C++ 类型别名 | C_ClockwiseSpiral, DynamicStaticLib | [链接](https://www.youtube.com/watch?v=ezqmozV3p0M) | [链接](https://www.bilibili.com/video/BV1VWqvB5ELX) |
 | **Cpp_SmartPtrs** | C++ 智能指针 | C_MemorySegmentation, MoveSemantic | [链接](https://www.youtube.com/watch?v=l1RRedJbk5k) | [链接](https://www.bilibili.com/video/BV1ajWyzXEpj) |
 | **CppCallable** | 函数的超进化 从面向过程的回调、仿函数至函数式编程与万能引用的可调用对象全解析 | MoveSemantic, CppTypeAlias, DynamicStaticLib | [链接](https://www.youtube.com/watch?v=K2QZncoUdLk) | [链接](https://www.bilibili.com/video/BV1F8zNB1EZk) |
 | **Cpp_namespace** | C++ 命名空间 | DynamicStaticLib | [链接](https://www.youtube.com/watch?v=n8uNKJSTyQc) | [链接](https://www.bilibili.com/video/BV1NTUpBoE59) |
@@ -50,9 +51,53 @@ C++ 之道，不在于多，而在于通。
 为了获得最佳学习体验，建议按以下顺序学习：
 
 1. C_ClockwiseSpiral / C_MemorySegmentation / MoveSemantic（可任意顺序）
-2. DynamicStaticLib
+2. DynamicStaticLib / Cpp_OOP （可任意顺序）
 3. CppTypeAlias / Cpp_SmartPtrs（可任意顺序）
 4. CppCallable / Cpp_namespace（可任意顺序）
+
+## 🏗️ 项目结构
+
+本项目采用全局 CMake 架构，以实现了源码与编译产物的隔离：
+
+```shell
+Cpp-Mental-Models/
+├── CMakeLists.txt       # 全局 CMake 配置（统一管控 C++ 标准与输出路径）
+├── modules/             # 源码目录：按视频主题划分的独立 C++ 进阶代码
+│   ├── Cpp_OOP/
+│   ├── MoveSemantic/
+│   └── ...
+├── bin/                 # 📦 编译后自动生成：集中存放所有可执行文件 (Git 忽略)
+└── lib/                 # 📦 编译后自动生成：集中存放所有动态/静态库 (Git 忽略)
+```
+
+## 🚀 快速开始
+
+本项目要求 **CMake 3.15+** 及支持 **C++20** 的编译器。
+
+### 方法一：IDE 一键运行（强烈推荐）
+
+推荐使用 **CLion** 或 **VSCode** (配合 CMake Tools 插件)。
+
+1. 直接用 IDE 打开项目**根目录** `Cpp-Mental-Models`。
+2. 允许 IDE 自动解析全局 `CMakeLists.txt`。
+3. 在右上角的运行目标 (Target) 下拉菜单中，选择带有模块前缀的特定目标（例如 `Cpp_OOP_demo1`），点击运行即可。
+
+> **💡 避坑提示**：请务必通过 CMake 目标列表运行代码！切勿点击单个 `.cpp` 文件旁边的快捷运行按钮，以免脱离 CMake 架构导致链接失败（如 `Undefined symbols` 报错）。
+
+### 方法二：命令行编译
+
+```shell
+# 1. 生成构建系统 (此时会自动创建 bin/ 和 lib/ 目录)
+cmake -B build
+
+# 2. 编译所有模块
+cmake --build build
+
+# 3. 运行指定的可执行文件
+./bin/Cpp_OOP_demo1_inheritance_polymorphism
+```
+
+
 
 ## ⭐ Star 走势
 
