@@ -21,14 +21,18 @@ This repository aims to assist learners in constructing a robust mental framewor
 
 **Core Features**
 
-- **Minimalist Physical Models** Every code example is meticulously crafted to strip away syntactic noise, grounding abstract programming concepts in intuitive, real-world analogies rather than overwhelming technical details.
-- **The Philosophy of Software Engineering** Technical choices are analyzed through an engineering lens. For instance, static linking is a strategy prioritizing deployment isolation (reliability), whereas dynamic linking acts as a trade-off favoring maintenance flexibility (extensibility).
-- **Intuitive Mental Analogies**
-  - **Smart Pointers**: `unique_ptr` is likened to a **"private car"** (exclusive ownership), while `shared_ptr` mirrors a **"public bus"** (shared access/mechanism).
-  - **Move Semantics**: Visualizes resource transfer as the direct **"relocation"** of image pixels, avoiding the high cost of traditional deep copying.
-  - Discover more insightful analogies in the accompanying video series.
+- **Minimalist Physical Models**: Every code example is meticulously crafted to strip away syntactic noise. The goal is to anchor abstract programming concepts in the most intuitive real-world physical analogies, rather than merely piling up technical details.
+- **Software Engineering Philosophy**: Examining technical choices through an engineering lens.
+  - **Architecture Design**: Adopting an industry-standard global CMake build system to achieve perfect isolation between source code and build artifacts, cultivating standard engineering intuition.
+  - **Architectural Trade-offs**: Exploring the balance between the "deployment isolation (reliability)" pursued by static linking and the "maintenance flexibility (extensibility)" gained through dynamic linking.
+  - *More to come...*
+- **Intuitive Mental Analogies**:
+  - **Smart Pointers**: Interpreting the exclusive ownership of `unique_ptr` as a "private car", and mapping the shared mechanism of `shared_ptr` to a "public bus".
+  - **Move Semantics**: Visualizing resource transfer as the direct physical "relocation" of image pixels, avoiding the high cost of traditional deep copying.
+  - **Deconstructing OOP**: From the contractual privileges of classes and polymorphic inheritance to the underlying mechanisms of virtual function tables (vtable), ultimately reshaping the boundaries of modern C++ resource management through the evolution from the "Rule of Five" to the "Rule of Zero".
+  - *More to come...*
 
-By leveraging these minimalist physical scenarios and code examples, this project aims to help learners construct a solid C/C++ system framework and grasp the essential design philosophy of the language.
+Through these minimalist physical scenarios and code examples, this project aims to help more learners construct a solid C/C++ system framework and grasp its core design philosophy.
 
 ## 📚 Contents
 
