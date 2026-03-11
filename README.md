@@ -83,9 +83,9 @@ Cpp-Mental-Models/
 
 推荐使用 **CLion** 或 **VSCode** (配合 CMake Tools 插件)。
 
-1. 直接用 IDE 打开项目**根目录** `Cpp-Mental-Models`。
-2. 允许 IDE 自动解析全局 `CMakeLists.txt`。
-3. 在右上角的运行目标 (Target) 下拉菜单中，选择带有模块前缀的特定目标（例如 `Cpp_OOP_demo1`），点击运行即可。
+1. 使用 IDE 打开项目**根目录** `Cpp-Mental-Models`。
+2. IDE 会自动识别并解析根目录下的 CMakeLists.txt 文件（若未自动触发，请手动重新加载 CMake 项目）。
+3. 等待 CMake 解析彻底完成后，进入各个模块 (modules) 的源码，直接点击 main 函数旁边的绿色运行按钮，即可查看运行结果。或在运行目标 (Target) 下拉菜单中，选择带有模块前缀的特定目标（例如 `Cpp_OOP_demo1`），点击运行即可。
 
 > **💡 避坑提示**：请务必通过 CMake 目标列表运行代码！切勿点击单个 `.cpp` 文件旁边的快捷运行按钮，以免脱离 CMake 架构导致链接失败（如 `Undefined symbols` 报错）。
 

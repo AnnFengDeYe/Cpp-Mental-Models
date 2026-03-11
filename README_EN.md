@@ -82,11 +82,11 @@ Cpp-Mental-Models/
 
 ### Option 1: IDE (Highly Recommended)
 
-We recommend using **CLion** or **VSCode** (with the CMake Tools extension).
+It is recommended to use **CLion** or **VS Code** (with the CMake Tools extension).
 
-1. Open the project **root directory** (`Cpp-Mental-Models`) directly in your IDE.
-2. Allow the IDE to automatically parse the global `CMakeLists.txt`.
-3. Select your desired target from the run/build dropdown menu (e.g., `Cpp_OOP_demo1`) and click Run.
+1. Open the project **root directory** Cpp-Mental-Models using your IDE.
+2. The IDE will automatically detect and parse the **CMakeLists.txt** file in the root directory (If not triggered automatically, please manually reload the CMake project).
+3. Wait until the CMake parsing is completely finished. You can then open the source code of each module and directly click the green run button next to the main function to see the execution results. Alternatively, you can select a specific target with the module prefix (e.g., Cpp_OOP_demo1) from the Run/Debug Target drop-down menu and click Run.
 
 > **💡 Pro Tip**: Always run the code via the generated CMake Targets! Avoid using "single-file run" shortcuts next to the `main()` function, as they will bypass standard CMake linkage and cause `Undefined symbols` errors.
 
