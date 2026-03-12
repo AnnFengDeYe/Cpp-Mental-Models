@@ -1,6 +1,6 @@
 # Cpp-Mental-Models
 
-[中文版](README_CN.md) | English
+[中文版](README.md) | English
 
 This repository contains code examples from my YouTube and Bilibili coding knowledge sharing videos.
 

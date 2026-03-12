@@ -1,6 +1,6 @@
 # Cpp-Mental-Models
 
-中文版 | [English](README.md)
+中文版 | [English](README_EN.md)
 
 本仓库包含我在 YouTube 和 Bilibili 上分享的代码知识相关的代码示例。
 
