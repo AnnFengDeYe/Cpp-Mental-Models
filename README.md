@@ -22,13 +22,13 @@ C++ 之道，不在于多，而在于通。
 - **极简物理模型** 所有代码案例均经过精心打磨，剥离繁杂的语法噪音，旨在将抽象的编程概念锚定于最直观的现实物理类比之中，而非堆砌技术细节。
 - **软件工程的哲学** 透过工程视角审视技术抉择。
   - **架构设计**：采用工业级全局 CMake 构建系统，实现源码与编译产物的完美隔离，培养规范的工程直觉。
-  - **架构权衡**：探讨静态链接追求的“部署隔离性（可靠性）”与动态链接换取的“维护灵活性（扩展性）”之间的权衡之道。
+  - **架构权衡**：探讨静态链接追求的部署隔离性（可靠性）与动态链接换取的维护灵活性（扩展性）之间的权衡之道。
   - 更多架构设计与工程视角的深度权衡，详见配套视频...
 
 - **直观的思维类比**
-  - **智能指针**： 以"私家车"诠释 `unique_ptr` 的独占所有权，以"公交车"映射 `shared_ptr` 的共享机制。
-  - **移动语义**： 将资源转移具象化为图像像素的直接"搬运"，而非传统高昂的深拷贝。
-  - **解构面向对象**：从类的契约特权、多态继承到虚函数表底层机制，并透过“五之法则”到“零之法则”的演进，重塑现代 C++ 资源管理边界。
+  - **智能指针**： 以私家车诠释 `unique_ptr` 的独占所有权，以公交车映射 `shared_ptr` 的共享机制。
+  - **移动语义**： 将资源转移具象化为图像像素的直接搬运，而非传统高昂的深拷贝。
+  - **解构面向对象**：从类的契约特权、多态继承到虚函数表底层机制，并透过五之法则到零之法则的演进，重塑现代 C++ 资源管理边界。
   - 更多类比与底层源码级剖析，详见配套视频...
 
   希望透过这些最简单的物理场景和代码案例，帮助更多人建立 C/C++ 扎实的系统框架和核心的设计哲学。
@@ -111,15 +111,6 @@ cmake --build build
 ## 📄 开源协议
 
 本项目采用 [MIT License](LICENSE) 开源。
-
-
-## ⭐ Star 走势
-
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=AnnFengDeYe/cpp-mental-models&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=AnnFengDeYe/cpp-mental-models&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=AnnFengDeYe/cpp-mental-models&type=date&legend=top-left" />
- </picture>
 
 
 ## 🤝 贡献

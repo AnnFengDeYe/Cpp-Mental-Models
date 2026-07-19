@@ -25,12 +25,12 @@ This repository aims to assist learners in constructing a robust mental framewor
 - **Software Engineering Philosophy**: Examining technical choices through an engineering lens.
   
   - **Architecture Design**: Adopting an industry-standard global CMake build system to achieve perfect isolation between source code and build artifacts, cultivating standard engineering intuition.
-  - **Architectural Trade-offs**: Exploring the balance between the "deployment isolation (reliability)" pursued by static linking and the "maintenance flexibility (extensibility)" gained through dynamic linking.
+  - **Architectural Trade-offs**: Exploring the balance between the deployment isolation (reliability) pursued by static linking and the maintenance flexibility (extensibility) gained through dynamic linking.
   - *For deeper architectural insights and engineering trade-offs, check out the companion videos...*
 - **Intuitive Mental Analogies**:
-  - **Smart Pointers**: Interpreting the exclusive ownership of `unique_ptr` as a "private car", and mapping the shared mechanism of `shared_ptr` to a "public bus".
-  - **Move Semantics**: Visualizing resource transfer as the direct physical "relocation" of image pixels, avoiding the high cost of traditional deep copying.
-  - **Deconstructing OOP**: From the contractual privileges of classes and polymorphic inheritance to the underlying mechanisms of virtual function tables (vtable), ultimately reshaping the boundaries of modern C++ resource management through the evolution from the "Rule of Five" to the "Rule of Zero".
+  - **Smart Pointers**: Interpreting the exclusive ownership of `unique_ptr` as a private car, and mapping the shared mechanism of `shared_ptr` to a public bus.
+  - **Move Semantics**: Visualizing resource transfer as the direct physical relocation of image pixels, avoiding the high cost of traditional deep copying.
+  - **Deconstructing OOP**: From the contractual privileges of classes and polymorphic inheritance to the underlying mechanisms of virtual function tables (vtable), ultimately reshaping the boundaries of modern C++ resource management through the evolution from the Rule of Five to the Rule of Zero.
   - *For more intuitive analogies and source-level deep dives, check out the companion videos....*
 
   Through these minimalist physical scenarios and code examples, this project aims to help more learners construct a solid C/C++ system framework and grasp its core design philosophy.
@@ -95,7 +95,7 @@ It is recommended to use **CLion** or **VS Code** (with the CMake Tools extensio
 2. The IDE will automatically detect and parse the **CMakeLists.txt** file in the root directory (If not triggered automatically, please manually reload the CMake project).
 3. Wait until the CMake parsing is completely finished. You can then open the source code of each module and directly click the green run button next to the main function to see the execution results. Alternatively, you can select a specific target with the module prefix (e.g., `oop_demo1_inheritance_polymorphism`) from the Run/Debug Target drop-down menu and click Run.
 
-> **💡 Pro Tip**: Always run the code via the generated CMake Targets! Avoid using "single-file run" shortcuts next to the `main()` function, as they will bypass standard CMake linkage and cause `Undefined symbols` errors.
+> **💡 Pro Tip**: Always run the code via the generated CMake Targets! Avoid using single-file run shortcuts next to the `main()` function, as they will bypass standard CMake linkage and cause `Undefined symbols` errors.
 
 
 ### Option 2: Command Line 
@@ -115,15 +115,6 @@ cmake --build build
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
-
-
-## ⭐ Star History
-
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=AnnFengDeYe/cpp-mental-models&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=AnnFengDeYe/cpp-mental-models&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=AnnFengDeYe/cpp-mental-models&type=date&legend=top-left" />
- </picture>
 
 
 ## 🤝 Contributing
